@@ -1,1 +1,1 @@
-# Codex
+# codex - VSCode Extension Manager

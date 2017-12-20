@@ -7,6 +7,10 @@ name = "pypi"
 
 [packages]
 
+docopt = "*"
+requests = "*"
+"bs4" = "*"
+semver = "*"
 
 
 [dev-packages]
