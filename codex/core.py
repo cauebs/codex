@@ -7,7 +7,7 @@ import requests
 import semver
 from bs4 import BeautifulSoup
 
-from config import VSCODE_EXECUTABLE
+from .config import VSCODE_EXECUTABLE
 
 
 def fetch_info(extension_id):

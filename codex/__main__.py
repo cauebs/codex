@@ -11,25 +11,30 @@ Usage:
 
 from docopt import docopt
 
-import core
+from . import core
 
 
-args = docopt(__doc__)
+def main():
+    args = docopt(__doc__)
 
-if args['search']:
-    query = ' '.join(args['<keyword>'])
-    core.search(query)
+    if args['search']:
+        query = ' '.join(args['<keyword>'])
+        core.search(query)
 
-elif args['install']:
-    for extension_id in args['<extension-id>']:
-        core.install(extension_id)
+    elif args['install']:
+        for extension_id in args['<extension-id>']:
+            core.install(extension_id)
 
-elif args['uninstall']:
-    for extension_id in args['<extension-id>']:
-        core.uninstall(extension_id)
+    elif args['uninstall']:
+        for extension_id in args['<extension-id>']:
+            core.uninstall(extension_id)
 
-elif args['update']:
-    core.update(args['<extension-id>'])
+    elif args['update']:
+        core.update(args['<extension-id>'])
 
-elif args['list']:
-    core.list_installed(args['--show-versions'])
+    elif args['list']:
+        core.list_installed(args['--show-versions'])
+
+
+if __name__ == '__main__':
+    main()
