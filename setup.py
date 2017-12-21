@@ -9,6 +9,7 @@ setup(
     name='vscodex',
     description='VSCode Extension Manager',
     long_description=long_description,
+    url='https://github.com/cauebs/vscodex',
     version='0.1.0',
 
     author='Cauê Baasch de Souza',
