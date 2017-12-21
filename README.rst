@@ -1,4 +1,4 @@
-codex - VSCode Extension Manager
+vscodex - VSCode Extension Manager
 ================================
 
 Installation
@@ -6,7 +6,7 @@ Installation
 
 .. code:: shell
 
-    pipsi install git+https://github.com/cauebs/codex#egg=codex
+    pipsi install vscodex
 
 Usage
 -----

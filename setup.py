@@ -6,7 +6,7 @@ with open('README.rst') as f:
 
 
 setup(
-    name='codex',
+    name='vscodex',
     description='VSCode Extension Manager',
     long_description=long_description,
     version='0.1.0',
