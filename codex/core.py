@@ -11,6 +11,7 @@ from .config import VSCODE_EXECUTABLE
 
 
 def fetch_info(extension_id):
+    print(f"Fetching info for '{extension_id}'")
     r = requests.get('https://marketplace.visualstudio.com/items',
                      params={'itemName': extension_id})
 
@@ -48,6 +49,7 @@ def fetch_latest_version(extension_id):
 
 
 def download_and_install(extension_id, url):
+    print(f'Downloading {url}')
     vsix = requests.get(url)
 
     with NamedTemporaryFile(suffix=f'-{extension_id}.vsix') as f:
