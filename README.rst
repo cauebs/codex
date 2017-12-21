@@ -6,7 +6,7 @@ Installation
 
 .. code:: shell
 
-    pipsi install codex
+    pipsi install git+https://github.com/cauebs/codex#egg=codex
 
 Usage
 -----
