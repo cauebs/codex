@@ -32,10 +32,6 @@ def current_versions():
     return dict(line.split('@') for line in run(args).splitlines())
 
 
-def search(keywords):
-    raise NotImplementedError
-
-
 def fetch_latest_version(extension_id):
     info = fetch_info(extension_id)
     latest = max(info['versions'], key=lambda x: x['version'])

@@ -15,7 +15,7 @@ setup(
     author_email='cauebs@protonmail.com',
     license='MIT',
 
-    install_requires=['docopt', 'requests', 'bs4', 'semver'],
+    install_requires=['docopt', 'requests', 'bs4', 'semver', 'tqdm'],
     packages=find_packages(),
     include_package_data=True,
     entry_points={

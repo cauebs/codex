@@ -1,7 +1,6 @@
 """codex - VSCode Extension Manager
 
 Usage:
-    codex search <keyword>...
     codex install <extension-id>...
     codex uninstall <extension-id>...
     codex update [<extension-id>...]
@@ -17,11 +16,7 @@ from . import core
 def main():
     args = docopt(__doc__)
 
-    if args['search']:
-        query = ' '.join(args['<keyword>'])
-        core.search(query)
-
-    elif args['install']:
+    if args['install']:
         for extension_id in args['<extension-id>']:
             core.install(extension_id)
 
