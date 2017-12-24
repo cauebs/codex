@@ -10,7 +10,7 @@ setup(
     description='VSCode Extension Manager',
     long_description=long_description,
     url='https://github.com/cauebs/vscodex',
-    version='0.1.1',
+    version='0.1.2',
 
     author='Cauê Baasch de Souza',
     author_email='cauebs@protonmail.com',
@@ -21,7 +21,7 @@ setup(
     include_package_data=True,
     entry_points={
         'console_scripts': [
-            'codex = codex.__main__:main',
+            'codex = vscodex.__main__:main',
         ],
     },
 
