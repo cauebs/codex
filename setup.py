@@ -10,7 +10,7 @@ setup(
     description='VSCode Extension Manager',
     long_description=long_description,
     url='https://github.com/cauebs/vscodex',
-    version='0.1.2',
+    version='0.1.3',
 
     author='Cauê Baasch de Souza',
     author_email='cauebs@protonmail.com',

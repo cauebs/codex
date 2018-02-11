@@ -84,7 +84,7 @@ def update(extension_ids):
         latest_version, url = fetch_latest_version(extension_id)
 
         if semver.compare(latest_version, current_version) == 1:
-            download_and_install(extension_id, url, VSCODE_EXECUTABLE)
+            download_and_install(extension_id, url)
             print(f"Extension '{extension_id}' was updated "
                   f'({current_version} -> {latest_version})')
         else:
